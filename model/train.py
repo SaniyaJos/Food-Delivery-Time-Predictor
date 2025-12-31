@@ -10,7 +10,6 @@ df = df.drop(columns=["Order_ID"], errors="ignore")
 
 
 df = df.dropna()
-print(df.shape)
 
 df_encoded = pd.get_dummies(
     df,
